@@ -10,35 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Marcellus&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #EEF1F5;
-  --surface: #FFFFFF;
-  --ink: #13234F;
-  --muted: #4A5878;
-  --line: #BFC9DD;
-  --gold: #7F5F0E;
-  --egypt: #0B7A70;
-  --aegean: #2A5BB8;
-  --lapis: #12275E;
-  --gold-bright: #D8B45C;
-  --on-lapis: #F3F5FB;
-  --lapis-soft: #D3DBF0;
-  box-sizing: border-box;
-  padding-top: env(safe-area-inset-top, 0px);
-  padding-bottom: env(safe-area-inset-bottom, 0px);
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0C1738;
-    --surface: #13224F;
-    --ink: #EAEFFA;
-    --muted: #A9B6D6;
-    --line: #2A3C75;
-    --gold: #D8B45C;
-    --egypt: #4FD1C0;
-    --aegean: #7FA6F0;
-  }
-}
-:root[data-theme="dark"] {
+  color-scheme: dark;
   --bg: #0C1738;
   --surface: #13224F;
   --ink: #EAEFFA;
@@ -47,16 +19,13 @@
   --gold: #D8B45C;
   --egypt: #4FD1C0;
   --aegean: #7FA6F0;
-  }
-:root[data-theme="light"] {
-  --bg: #EEF1F5;
-  --surface: #FFFFFF;
-  --ink: #13234F;
-  --muted: #4A5878;
-  --line: #BFC9DD;
-  --gold: #7F5F0E;
-  --egypt: #0B7A70;
-  --aegean: #2A5BB8;
+  --lapis: #12275E;
+  --gold-bright: #D8B45C;
+  --on-lapis: #F3F5FB;
+  --lapis-soft: #D3DBF0;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 html { scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 72px); scroll-behavior: smooth; }
 *, *::before, *::after { box-sizing: inherit; }
