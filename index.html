@@ -4,13 +4,38 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0C1738">
 <title>Aleksandria — kawiarnia</title>
 <meta name="description" content="Kawiarnia, w której espresso spotyka kawy ziołowe z Egiptu i Grecji.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Marcellus&display=swap" rel="stylesheet">
 <style>
-html, body { background: #0C1738 !important; color: #EAEFFA !important; }
+html, body {
+  background: #0C1738 !important;
+  background-color: #0C1738 !important;
+  color: #EAEFFA !important;
+  color-scheme: dark !important;
+  forced-color-adjust: none !important;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: dark !important;
+    --bg: #0C1738 !important;
+    --surface: #13224F !important;
+    --ink: #EAEFFA !important;
+    --muted: #A9B6D6 !important;
+    --line: #2A3C75 !important;
+    --gold: #D8B45C !important;
+    --egypt: #4FD1C0 !important;
+    --aegean: #7FA6F0 !important;
+    --lapis: #12275E !important;
+    --gold-bright: #D8B45C !important;
+    --on-lapis: #F3F5FB !important;
+    --lapis-soft: #D3DBF0 !important;
+  }
+  html, body { background: #0C1738 !important; background-color: #0C1738 !important; color: #EAEFFA !important; }
+}
 :root {
   color-scheme: dark;
   --bg: #0C1738;
